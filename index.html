@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>당신의 힐링 처방전, 예술마을 프로젝트</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body onload="ShowVideo()">
+<!-- partial:index.partial.html -->
+<div class="modal-wrap">
+  <div class="modal-header"><span class="is-active"></span><span></span><span></span></div>
+  <div class="modal-bodies">
+    <div class="modal-body modal-body-step-1 is-showing">
+      <div class="title">-- 환영합니다 --</div>      
+      <div style="text-align : center;"><img src="./image1.jpg" width="300", height="300"> </div>
+      
+      <div class="description">
+        
+        당신은 어떤 사람인가요?</div>
+      <form>
+        <input type="text" placeholder="이름이 무엇인가요?"/>
+        <input type="email" placeholder="이메일 주소를 알려주세요!"/>
+        <div class="text-center">
+          <div class="button">Start</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-body modal-body-step-2">
+      <div class="title">Step 1</div>
+      <div class="description">요즘 내 기분은 무슨 색이에요?</div>
+      <form>
+        <input type="text" placeholder="당신의 기분을 색으로 나타내보아요."/>
+        <div class="text-center fade-in">
+          <div class="button">Next</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-body modal-body-step-2">
+      <div class="title">Step 2</div>
+      <div class="description">코로나가 끝나고 가고 싶은 여행지는 어떤 곳인가요?</div>
+      <form>
+        <label>
+          <input type="radio" name="radio"  id="radio1"/>시원한 바다가 한 눈에 보이는 휴양지
+        </label>
+        <label>
+          <input type="radio" name="radio" id="radio2"/>다양한 사람과 함께 소통할 수 있는 도시지역
+        </label>
+        <label>
+          <input type="radio" name="radio" id="radio3"/>새소리 가득하고 아름다운 능선을 자랑하는 산
+        </label>
+        <div class="text-center fade-in">
+          <div class="button">Next</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-body modal-body-step-2">
+      <div class="title">Step 3</div>
+      <div class="description">나는 우울할 때 어떤 일을 하나요?</div>
+      <form>
+        <input type="text" placeholder="우울한 그 순간 당신은 뭐를 하나요?"/>
+        <div class="text-center fade-in">
+          <div class="button">Next</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-body modal-body-step-2">
+      <div class="title">Step 4</div>
+      <div class="description">무인도에 간다면 누굴데려가고 싶나요?</div>
+      <form>
+        <label>
+          <input type="radio" name="radio"  id="radio1"/>가족
+        </label>
+        <label>
+          <input type="radio" name="radio" id="radio2"/>친구
+        </label>
+        <label>
+          <input type="radio" name="radio" id="radio3"/>연인
+        </label>
+        <label>
+          <input type="radio" name="radio" id="radio3"/>다른 것들..
+        </label>
+        <div class="text-center fade-in">
+          <div class="button">Next</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-body modal-body-step-2">
+      <div class="title">Step 5</div>
+      <div class="description">소외되는 감정을 느껴본적 있나요? 언제 그랬나요?</div>
+      <form>
+        <input type="text" placeholder="비밀은 당연히 지켜드려요."/>
+        <div class="text-center fade-in">
+          <div class="button">Next</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-body modal-body-step-2">
+      <div class="title">Step 6</div>
+      <div class="description">어렸을 때 가장 행복했던 기억은?</div>
+      <form>
+        <input type="text" placeholder="무궁화 꽃이 피었습니다-!"/>
+        <div class="text-center fade-in">
+          <div class="button">Next</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-body modal-body-step-3">
+      <div class="title">당신을 위한 처방전, 함께 할까요?</div>
+      <div class="description">바쁜 일상에서 잠시 멈춰 여러분들을 돌아봐주세요</div>
+      <script>
+        var image = new Array();
+        image[0] = "./Trim7.mp4";
+        image[1] ="./Trim8.mp4";
+        image[2] = "./Trim9.mp4";
+        image[3] = "./Trim10.mp4";
+        image[4] = "./Trim11.mp4";
+        image[5] = "./Trim12.mp4";
+        
+        index = Math.floor(Math.random() * image.length);
+        document.write("<embed width='380' height='280' src='"+image[index]+"' showstatusbar='0' showpositioncontrols='0' ShowControls='0' loop='1'>" );
+      </script>
+      <div class="description">다시 바쁜 일상에 지쳐갈 때 쯤 메일을 확인해주세요.</div>
+      <div class="description">예술마을 프로젝트가 '쉼'을 보내드릴게요.</div>
+      <div class="text-center">
+        <div class="button">또 만나요.</div>
+      </div>
+    </div>""
+  </div>
+</div>
+<div class="text-center">
+  <div class="rerun-button">ReRun</div>
+  <div style="text-align : center;"><img src="./ogo.png" width="100", height="50"> </div>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
